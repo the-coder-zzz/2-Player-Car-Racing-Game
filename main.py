@@ -129,9 +129,12 @@ class ComputerCar(AbstractCar):
         self.current_point = 0
         self.vel = max_vel
 
+    #for drawing the points of path
+    '''''
     def draw_points(self, win):
         for point in self.path:
             pygame.draw.circle(win, (255, 0, 0), point, 5)
+    '''''
 
     def draw(self, win):
         super().draw(win)
