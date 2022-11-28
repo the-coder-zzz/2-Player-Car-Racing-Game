@@ -15,14 +15,14 @@ FINISH = pygame.image.load("imgs/finish.png")
 FINISH_MASK = pygame.mask.from_surface(FINISH)
 FINISH_POSITION = (100, 220)
 
-RED_CAR = scale_image(pygame.image.load("imgs/red-car.png"), 0.45)
+WHITE_CAR = scale_image(pygame.image.load("imgs/white-car.png"), 0.45)
 GREEN_CAR = scale_image(pygame.image.load("imgs/green-car.png"), 0.45)
 
 WIDTH, HEIGHT = TRACK.get_width(), TRACK.get_height()
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Racing Game!")
 
-MAIN_FONT = pygame.font.SysFont("comicsans", 20)
+MAIN_FONT = pygame.font.SysFont("verdana", 28)
 FPS = 60
 PATH = [(145, 109), (99, 66), (54, 104), (50, 355), (63, 417), (248, 593), (305, 606), (342, 559), (351, 440), 
         (414, 403), (494, 440), (497, 572), (559, 611), (622, 560), (614, 352), (559, 305), (379, 304), (331, 260),
@@ -57,8 +57,6 @@ class GameInfo:
             return 0
         return round(time.time() - self.level_start_time)  
      
-
-
 
 # Rotating the Car
 # Parent Class
@@ -109,7 +107,7 @@ class AbstractCar:
         self.vel = 0
 
 class PlayerCar(AbstractCar):
-    IMG = RED_CAR
+    IMG = WHITE_CAR
     START_POS = (155, 175)
 
     def reduce_speed(self):
@@ -178,7 +176,7 @@ class ComputerCar(AbstractCar):
 
     def next_level(self, Level):
         self.reset()
-        self.vel = self.max_vel + (level - 1) * 0.2
+        self.vel = self.max_vel + (Level - 1) * 0.2
         self.current_point = 0
 
 
@@ -250,7 +248,7 @@ clock = pygame.time.Clock()
 images = [(GRASS, (0, 0)), (TRACK, (0, 0)),
           (FINISH, FINISH_POSITION), (TRACK_BORDER, (0, 0))]
 player_car = PlayerCar(4, 4)
-computer_car = ComputerCar(2, 4, PATH)
+computer_car = ComputerCar(1, 4, PATH)
 game_info = GameInfo()
 
 
