@@ -16,7 +16,7 @@ FINISH_MASK = pygame.mask.from_surface(FINISH)
 FINISH_POSITION = (100, 220)
 
 WHITE_CAR = scale_image(pygame.image.load("imgs/white-car.png"), 0.45)
-GREEN_CAR = scale_image(pygame.image.load("imgs/green-car.png"), 0.45)
+RED_CAR = scale_image(pygame.image.load("imgs/red-car.png"), 0.45)
 
 WIDTH, HEIGHT = TRACK.get_width(), TRACK.get_height()
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
@@ -120,7 +120,7 @@ class PlayerCar(AbstractCar):
 
 
 class ComputerCar(AbstractCar):
-    IMG = GREEN_CAR
+    IMG = RED_CAR
     START_POS = (125, 175)
 
     def __init__(self, max_vel, rotation_vel, path = []):
