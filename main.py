@@ -57,7 +57,6 @@ class GameInfo:
             return 0
         return round(time.time() - self.level_start_time)  
      
-
 # Rotating the Car
 # Parent Class
 class AbstractCar:
