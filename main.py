@@ -1,9 +1,8 @@
-import pygame
-import time
-import math
+import pygame, time, math
 from utils import *
+from pygame import mixer
 pygame.font.init()
-
+pygame.init()
 
 GRASS = scale_image(pygame.image.load("imgs/grass.jpg"), 1.9)
 TRACK = scale_image(pygame.image.load("imgs/track.png"), 0.75)
@@ -23,6 +22,9 @@ WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Racing Game!")
 
 MAIN_FONT = pygame.font.SysFont("verdana", 28)
+mixer.music.load("musics/tokyo_drift_beat.mp3")
+mixer.music.play()
+
 FPS = 60
 PATH = [(145, 109), (99, 66), (54, 104), (50, 355), (63, 417), (248, 593), (305, 606), (342, 559), (351, 440), 
         (414, 403), (494, 440), (497, 572), (559, 611), (622, 560), (614, 352), (559, 305), (379, 304), (331, 260),
@@ -57,8 +59,6 @@ class GameInfo:
             return 0
         return round(time.time() - self.level_start_time)  
      
-
-# Rotating the Car
 # Parent Class
 class AbstractCar:
     def __init__(self, max_vel, rotation_vel):
@@ -105,6 +105,10 @@ class AbstractCar:
         self.x, self.y = self.START_POS
         self.angle = 0
         self.vel = 0
+
+    def play_sound(self):
+        sound = mixer.Sound("musics/car_audio.mp3")
+        sound.play()
 
 class PlayerCar(AbstractCar):
     IMG = WHITE_CAR
@@ -213,6 +217,7 @@ def move_player(player_car):
     if keys[pygame.K_w]:
         moved = True
         player_car.move_forward()
+        player_car.play_sound()
     if keys[pygame.K_s]:
         moved = True
         player_car.move_backward()
