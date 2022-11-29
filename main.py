@@ -22,7 +22,7 @@ WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Racing Game!")
 
 MAIN_FONT = pygame.font.SysFont("verdana", 28)
-mixer.music.load("musics/tokyo_drift_beat.mp3")
+mixer.music.load("musics/tokyo_drift.mp3")
 mixer.music.play()
 
 FPS = 60
