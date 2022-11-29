@@ -58,7 +58,7 @@ class GameInfo:
         if not self.started:
             return 0
         return round(time.time() - self.level_start_time)  
-     
+
 # Parent Class
 class AbstractCar:
     def __init__(self, max_vel, rotation_vel):
