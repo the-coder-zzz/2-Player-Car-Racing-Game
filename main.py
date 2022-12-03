@@ -19,7 +19,7 @@ RED_CAR = scale_image(pygame.image.load("imgs/red-car.png"), 0.45)
 
 WIDTH, HEIGHT = TRACK.get_width(), TRACK.get_height()
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("2 Player Racing Game!")
+pygame.display.set_caption("2 Player Car Racing Game!")
 
 MAIN_FONT = pygame.font.SysFont("verdana", 28)
 mixer.music.load("musics/tokyo_drift.mp3")
