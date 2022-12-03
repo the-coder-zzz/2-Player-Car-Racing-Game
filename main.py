@@ -288,7 +288,8 @@ while run:
 
     if game_info.game_finished():
         blit_text_center(WIN, MAIN_FONT, "You won the game!")
-        pygame.time.wait(2500)        
+        pygame.display.update()
+        pygame.time.wait(3000)        
         game_info.reset()
         player_car.reset()
         computer_car.reset()
