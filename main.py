@@ -22,7 +22,7 @@ WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 
 MAIN_FONT = pygame.font.SysFont("verdana", 28)
 mixer.music.load("musics/tokyo_drift.mp3")
-mixer.music.play()
+mixer.music.play(-1)
 
 FPS = 60
 PATH = [(145, 109), (99, 66), (54, 104), (50, 355), (63, 417), (248, 593), (305, 606), (342, 559), (351, 440), 
