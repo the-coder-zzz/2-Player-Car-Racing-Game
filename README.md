@@ -4,7 +4,7 @@
 
 # How to use:
 - This program provides a 2 player car racing game with a gui using pygame.
-- Press 'w' to move forward, 's' for backward, 'a' for going left and 'd' for going right
+- Press 'w' key to move forward, 's' for backward, 'a' for going left and 'd' for going right
 - This game escalates into 10 levels which if the user reached it, then they will win the game.
 
 Dependencies included in the requirements.txt:
