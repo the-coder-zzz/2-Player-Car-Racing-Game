@@ -23,7 +23,7 @@ pygame.display.set_caption("2 Player Car Racing Game!")
 
 MAIN_FONT = pygame.font.SysFont("verdana", 28)
 mixer.music.load("musics/tokyo_drift.mp3")
-mixer.music.play()
+mixer.music.play(-1)
 
 FPS = 60
 PATH = [(145, 109), (99, 66), (54, 104), (50, 355), (63, 417), (248, 593), (305, 606), (342, 559), (351, 440), 
@@ -225,7 +225,6 @@ def move_player(player_car):
     if not moved:
         player_car.reduce_speed()
 
-
 def handle_collision(player_car, computer_car, game_info):
     if player_car.collide(TRACK_BORDER_MASK) != None:
         player_car.bounce()
@@ -250,7 +249,6 @@ def handle_collision(player_car, computer_car, game_info):
             player_car.reset()
             computer_car.next_level(game_info.level)
 
-
 run = True
 clock = pygame.time.Clock()
 images = [(GRASS, (0, 0)), (TRACK, (0, 0)),
@@ -258,7 +256,6 @@ images = [(GRASS, (0, 0)), (TRACK, (0, 0)),
 player_car = PlayerCar(4, 4)
 computer_car = ComputerCar(1, 4, PATH)
 game_info = GameInfo()
-
 
 while run:
     clock.tick(FPS)
