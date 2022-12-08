@@ -18,6 +18,9 @@ Dependencies included in the requirements.txt:
 - Werkzeug==2.2.2
 - zipp==3.11.0
 
+# Video Presentation
+Link for the video presentation: https://drive.google.com/drive/folders/1IkSYJbj1sJBmR_OJu4i9aIi6AYv8oBD6?usp=share_link
+
 # UML
 ![uml](https://user-images.githubusercontent.com/114120936/206354217-3c3f4c9b-bed3-479a-bde5-f1867a5e6c28.jpg)
 
