@@ -19,7 +19,7 @@ Dependencies included in the requirements.txt:
 - zipp==3.11.0
 
 # UML
-![image](https://user-images.githubusercontent.com/114120936/206326368-37f7f550-16f2-48be-96da-9361fa325790.png)
+![uml](https://user-images.githubusercontent.com/114120936/206354217-3c3f4c9b-bed3-479a-bde5-f1867a5e6c28.jpg)
 
 # General Instruction:
 You may clone using git or download the repository and extract the files manually:
