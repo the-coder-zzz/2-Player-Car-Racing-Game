@@ -18,6 +18,9 @@ Dependencies included in the requirements.txt:
 - Werkzeug==2.2.2
 - zipp==3.11.0
 
+# UML
+![image](https://user-images.githubusercontent.com/114120936/206326368-37f7f550-16f2-48be-96da-9361fa325790.png)
+
 # General Instruction:
 You may clone using git or download the repository and extract the files manually:
 - Once cloned, CD into the folder and enter pip install -r requirements.txt.
