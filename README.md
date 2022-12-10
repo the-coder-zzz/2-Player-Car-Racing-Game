@@ -27,6 +27,7 @@ Link for the video presentation: https://youtu.be/G67mSLYUm5k
 # General Instruction:
 You may clone using git or download the repository and extract the files manually:
 - Once cloned, CD into the folder and enter pip install -r requirements.txt.
+- Make sure that you are using a conda environment
 
 
 
