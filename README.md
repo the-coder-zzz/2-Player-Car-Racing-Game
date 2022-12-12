@@ -19,7 +19,7 @@ Dependencies included in the requirements.txt:
 - zipp==3.11.0
 
 # Demo
-Link for the video presentation: https://youtu.be/G67mSLYUm5k
+Link for the video presentation: [https://youtu.be/G67mSLYUm5k](https://youtu.be/MN7yLbJYwX4)
 
 # UML
 [UML - Car Racing.pdf](https://github.com/the-coder-zzz/2-Player-Car-Racing-Game/files/10203771/UML.-.Car.Racing.pdf)
