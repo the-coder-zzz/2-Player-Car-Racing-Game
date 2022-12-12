@@ -22,6 +22,7 @@ Dependencies included in the requirements.txt:
 Link for the video presentation: https://youtu.be/G67mSLYUm5k
 
 # UML
+[UML - Car Racing.pdf](https://github.com/the-coder-zzz/2-Player-Car-Racing-Game/files/10203771/UML.-.Car.Racing.pdf)
 ![Screenshot 2022-12-08 120333](https://user-images.githubusercontent.com/114120936/206849398-68eb09b5-7bf3-460e-9a2f-c5d6adf6c4b0.png)
 
 # General Instruction:
